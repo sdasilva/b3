@@ -8,7 +8,9 @@
     "directories": {
         "lib": "lib"
     },
-    "scripts": {},
+    "scripts": {
+        "buildprod":"parcel build index.html --out-dir docs"
+    },
     "devDependencies": {
         "parcel-bundler": "^1.11.0",
         "typescript": "^3.3.3333"
