@@ -1,0 +1,16 @@
+{
+    "name": "b3",
+    "version": "0.0.9",
+    "description": "a brick breaking arcade game",
+    "author": "sdasilva",
+    "license": "MIT",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {},
+    "devDependencies": {
+        "parcel-bundler": "^1.11.0",
+        "typescript": "^3.3.3333"
+    }
+}
