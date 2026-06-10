@@ -13,8 +13,16 @@ export class MenuScene extends Phaser.Scene {
 
         startButton.setInteractive();
 
-        startButton.on("pointerdown", () => {
+        let hasStarted = false;
+        const startGame = () => {
+            if (hasStarted) {
+                return;
+            }
+            hasStarted = true;
             this.scene.start(CST.SCENES.PLAY);
-        });
+        };
+
+        startButton.on("pointerdown", startGame);
+        startButton.on("pointerup", startGame);
     }
 }
