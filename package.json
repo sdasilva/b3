@@ -5,7 +5,7 @@
     "author": "sdasilva",
     "license": "MIT",
     "scripts": {
-        "buildprod": "parcel build index.html --dist-dir docs"
+        "buildprod": "parcel build index.html --dist-dir docs --public-url ./"
     },
     "dependencies": {
         "phaser": "^3.90.0",
