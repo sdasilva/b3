@@ -8,5 +8,15 @@ export class PlayScene extends Phaser.Scene {
         });
     }
     preload() { }
-    create() { }
+    create() {
+        const { width, height } = this.scale;
+        const fontSize = `${Math.round(Math.min(width, height) * 0.05)}px`;
+
+        this.add.text(width / 2, height * 0.7, "Gameplay is coming soon", {
+            color: "#ffffff",
+            fontSize,
+            stroke: "#000000",
+            strokeThickness: 4
+        }).setOrigin(0.5);
+    }
 }
