@@ -6,12 +6,9 @@ import { PlayScene } from "./scenes/PlayScene";
 let game: Phaser.Game = new Phaser.Game({
     title: "b3",
     type: Phaser.AUTO,
-    parent: "game",
     scale: {
-        mode: Phaser.Scale.FIT,
+        mode: Phaser.Scale.RESIZE,
         autoCenter: Phaser.Scale.CENTER_BOTH,
-        width: 640,
-        height: 960,
     },
     scene: [
         LoadScene, MenuScene, PlayScene

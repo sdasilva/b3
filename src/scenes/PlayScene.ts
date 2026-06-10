@@ -29,6 +29,7 @@ export class PlayScene extends Phaser.Scene {
         this.gameEnded = false;
         this.lives = 3;
 
+        this.physics.world.setBounds(0, 0, width, height);
         this.buildTextures(width);
         this.createBricks(width);
         this.createPaddle(width, height);
