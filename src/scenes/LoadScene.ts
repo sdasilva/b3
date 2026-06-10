@@ -22,9 +22,17 @@ export class LoadScene extends Phaser.Scene {
             this.load.audio(CST.AUDIO[prop], CST.AUDIO[prop]);
         }
     }
+    loadSprites() {
+        this.load.setPath("./assets/sprite");
+
+        for (let prop in CST.SPRITE) {
+            this.load.image(CST.SPRITE[prop], CST.SPRITE[prop]);
+        }
+    }
     preload() {
         this.loadImages();
         this.loadAudio();
+        this.loadSprites();
 
         let loadingBar = this.add.graphics({
             fillStyle: {
