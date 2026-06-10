@@ -10,6 +10,7 @@ export const CST = {
     AUDIO: {
     },
     SPRITE: {
+        CAT: "cat.png"
     },
     ATLAS: { 
     }
