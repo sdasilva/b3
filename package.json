@@ -4,15 +4,15 @@
     "description": "a brick breaking arcade game",
     "author": "sdasilva",
     "license": "MIT",
-    "main": "index.js",
-    "directories": {
-        "lib": "lib"
-    },
     "scripts": {
-        "buildprod":"parcel build index.html --out-dir docs"
+        "buildprod": "parcel build index.html --dist-dir docs"
+    },
+    "dependencies": {
+        "phaser": "^3.90.0",
+        "process": "^0.11.10"
     },
     "devDependencies": {
-        "parcel-bundler": "^1.11.0",
-        "typescript": "^3.3.3333"
+        "parcel": "^2.16.4",
+        "typescript": "^6.0.3"
     }
 }

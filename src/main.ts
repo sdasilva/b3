@@ -1,5 +1,4 @@
-/** @type {import("../typings/phaser")} */
-
+import Phaser from "phaser";
 import { LoadScene } from "./scenes/LoadScene";
 import { MenuScene } from "./scenes/MenuScene";
 import { PlayScene } from "./scenes/PlayScene";
