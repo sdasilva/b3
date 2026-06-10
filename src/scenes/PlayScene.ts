@@ -14,7 +14,9 @@ export class PlayScene extends Phaser.Scene {
 
         this.add.text(width / 2, height * 0.7, "Gameplay is coming soon", {
             color: "#ffffff",
-            fontSize
+            fontSize,
+            stroke: "#000000",
+            strokeThickness: 4
         }).setOrigin(0.5);
     }
 }
